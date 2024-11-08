@@ -12,11 +12,10 @@
 }
 
 .container{
-    border: solid 2px #d3d3d3;
     padding: 1.4rem;
     width: 100%;
     max-width: 720px;
-    height: 500px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -26,7 +25,9 @@
 
 .card{
     flex: 1;
-    border:solid 2px #d3d3d3;
+    background-position: center;
+    background-attachment:fixed;
+    background-size:cover;
     border-radius: 16px;
     height:100%;
     transition: all 400ms;
