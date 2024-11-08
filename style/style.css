@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: #101010;
+    padding: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.container{
+    border: solid 2px #d3d3d3;
+    padding: 1.4rem;
+    width: 100%;
+    max-width: 720px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.25rem;
+    transition: all 400ms;
+}
+
+.card{
+    flex: 1;
+    border:solid 2px #d3d3d3;
+    border-radius: 16px;
+    height:100%;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+/* Transition */
+
+.card:nth-child(odd) {
+    translate: 0 -20px;
+}
+
+.card:nth-child(even) {
+    translate: 0 20px;
+}
+
+.container:hover > .card:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.card:hover {
+    flex: 3;
+}
